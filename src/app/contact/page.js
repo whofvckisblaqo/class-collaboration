@@ -99,8 +99,8 @@ export default function ProfessionalContact() {
                   <div className="w-20 h-20 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-6">
                     <Send size={40} className="animate-bounce" />
                   </div>
-                  <h3 className="text-3xl font-bold text-blue-950">Inquiry Received</h3>
-                  <p className="text-slate-500 mt-2">A specialist will reach out to you shortly.</p>
+                  <h3 className="text-3xl font-bold text-slate-200">Inquiry Received</h3>
+                  <p className="text-slate-400 mt-2">A specialist will reach out to you shortly.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-8">
