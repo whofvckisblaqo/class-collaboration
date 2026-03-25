@@ -1,4 +1,4 @@
-'use client'; // Required for the menu toggle state
+'use client';
 import React, { useState } from 'react';
 
 export default function Navbar() {
@@ -16,18 +16,15 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-10">
           <a href="/" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Home</a>
-          <a href="#services" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Services</a>
-          <a href="#contact" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Contact</a>
+          <a href="/services" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Services</a>
+          <a href="/contact" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Contact</a>
           <button className="bg-indigo-600 hover:bg-indigo-500 px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-lg shadow-indigo-500/20">
             Get Started
           </button>
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-white"
-          onClick={() => setIsOpen(!isOpen)}
-        >
+        <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
           ) : (
