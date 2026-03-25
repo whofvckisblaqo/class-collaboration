@@ -1,5 +1,5 @@
 import React from 'react';
-import { LayoutGrid, Rocket, Shield, Zap, ArrowRight, GitHub } from 'lucide-react';
+import { LayoutGrid, Rocket, Shield, Zap, ArrowRight, Globe } from 'lucide-react';
 
 export default function Page() {
   return (
@@ -70,9 +70,9 @@ export default function Page() {
             <p className="text-xs text-slate-500">Go from 0 to 1M users.</p>
           </div>
 
-          {/* Small Card 2 (GitHub Link) */}
+          {/* Small Card 2 (Globe Link) */}
           <div className="bg-[#171717] border border-white/5 rounded-3xl p-6 hover:bg-black transition-all flex flex-col items-center justify-center text-center group">
-            <GitHub className="w-8 h-8 text-white mb-3 group-hover:scale-110 transition-transform" />
+            <Globe className="w-8 h-8 text-white mb-3 group-hover:scale-110 transition-transform" />
             <h3 className="font-bold">Open Source</h3>
             <p className="text-xs text-slate-500">Check the source code.</p>
           </div>
