@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import { LayoutGrid, Rocket, Shield, Zap, ArrowRight, Globe } from 'lucide-react';
 
 export default function Page() {
@@ -11,9 +12,11 @@ export default function Page() {
           BENTO_
         </div>
         <div className="flex gap-4">
+          <Link href="/contact">
           <button className="bg-white/5 hover:bg-white/10 px-4 py-2 rounded-lg text-sm transition-all border border-white/10">
             Login
           </button>
+          </Link>
           <button className="bg-indigo-600 hover:bg-indigo-500 px-4 py-2 rounded-lg text-sm font-bold transition-all shadow-lg shadow-indigo-500/20">
             Get Started
           </button>
